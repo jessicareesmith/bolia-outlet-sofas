@@ -48,8 +48,8 @@ select.sc.low{background:#f1e4e1;border-color:#d4a59b}
 <li>Since 2026-10-27: 0 new, 1 no longer available</li>
 <li>Prices: outlet sales price in EUR. Modular width = sum of module widths in a straight run.</li>
 <li>Photos are Bolia catalog images of each model in the listed fabric; open a piece for the actual outlet item and its condition.</li>
-<li>Scanned 2026-10-28 15:41. Outlet stock is one unit per listing and prices change, so check Bolia before buying.</li>
-<li>JSK and ISK scores (High / Medium / Low): pick from the dropdown on any configuration. Shared storage is not connected yet, so scores save in this browser only.</li></ul></header>
+<li>Scanned 2026-10-28 19:23. Outlet stock is one unit per listing and prices change, so check Bolia before buying.</li>
+<li>JSK and ISK scores (High / Medium / Low): pick from the dropdown on any configuration. Scores are shared: changes save for everyone with this link and carry over between scans.</li></ul></header>
 <div class="bar"><input id="q" type="search" placeholder="Search style, fabric, piece…"><select id="sty"><option value="">All styles</option><option>Angle</option><option>Avelou</option><option>Caisa</option><option>Chleo</option><option>Cosy</option><option>Elton</option><option>Lomi</option><option>MR. BIG</option><option>Noora</option><option>Núvol</option><option>Scandinavia</option><option>Scandinavia Remix</option><option>Sepia</option><option>Veneda</option></select><label>JSK <select id="fj"><option value="">any</option><option>High</option><option>Medium</option><option>Low</option><option value="none">unrated</option></select></label><label>ISK <select id="fi"><option value="">any</option><option>High</option><option>Medium</option><option>Low</option><option value="none">unrated</option></select></label><label>Sort <select id="sort"><option value="default">New first, then cheapest</option><option value="jsk">JSK score, high to low</option><option value="isk">ISK score, high to low</option><option value="both">JSK + ISK combined, high to low</option><option value="price">Price, low to high</option></select></label><label><input id="nw" type="checkbox"> New only</label><span id="cnt"></span><span id="sync"></span></div><main><div id="list">
 <h2 data-o="0">Previously listed (28)</h2>
 <section class="card" data-style="Avelou" data-id="10622178" data-total="2490" data-o="1" data-s="avelou paza, sand complete sofa avelou 2 module mit kleiner ecke"><div class="head"><div><div class="t">1. Avelou · Paza, Sand</div><div class="m">240 cm wide · complete sofa · 1 store(s) · first seen 2026-10-21</div></div><div class="price">€2,490</div></div><div class="scores"><span class="sl">Scores</span><label>JSK score <select class="sc" data-who="jsk" aria-label="JSK score"><option value="">–</option><option>High</option><option>Medium</option><option>Low</option></select></label><label>ISK score <select class="sc" data-who="isk" aria-label="ISK score"><option value="">–</option><option>High</option><option>Medium</option><option>Low</option></select></label></div><div class="pieces">
@@ -188,7 +188,7 @@ select.sc.low{background:#f1e4e1;border-color:#d4a59b}
 </div>
 </section>
 </div></main><script>
-const EP="",LS="bolia_scores_local";
+const EP="https://script.google.com/macros/s/AKfycbyEk9_GFzo3cws6Sqb73FtScihVia7y5a9Sa3H82K9ViJNAcfucGIwD4x8Eo-ki9psVlw/exec",LS="bolia_scores_local";
 let R={};
 const $=id=>document.getElementById(id),cards=[...document.querySelectorAll('.card')];
 const RANK={High:3,Medium:2,Low:1},rv=(id,w)=>((R[id]||{})[w])||'',rk=(c,w)=>RANK[c.dataset[w]]||0;
